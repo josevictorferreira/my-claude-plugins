@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "my-claude-plugins",
+  "description": "Custom Claude Code plugins by josevictorferreira",
+  "owner": {
+    "name": "José Victor Ferreira",
+    "email": "jose.ferreira@agrosmart.com.br"
+  },
+  "plugins": [
+    {
+      "name": "voice",
+      "description": "Speak the last agent reply (/speak) and dictate into the prompt (/dictate), via Velox",
+      "source": "./plugins/voice",
+      "category": "productivity",
+      "tags": ["tts", "stt", "voice", "velox"]
+    }
+  ]
+}

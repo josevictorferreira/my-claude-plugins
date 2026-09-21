@@ -1,0 +1,13 @@
+{
+  "name": "voice",
+  "version": "0.1.0",
+  "description": "Text-to-speech for agent replies and microphone dictation, through Velox",
+  "author": {
+    "name": "José Victor Ferreira"
+  },
+  "repository": "https://github.com/josevictorferreira/my-claude-plugins",
+  "license": "MIT",
+  "keywords": ["tts", "stt", "voice", "velox", "speech"],
+  "commands": "./commands/",
+  "hooks": "./hooks/hooks.json"
+}

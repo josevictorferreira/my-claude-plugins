@@ -1,0 +1,29 @@
+{
+  "description": "Auto-speak every settled reply when TTS_AUTO_SPEAK is on, and clean up on exit",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PLUGIN_ROOT\"/scripts/speak.mjs --auto",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PLUGIN_ROOT\"/scripts/speak.mjs --cleanup",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
