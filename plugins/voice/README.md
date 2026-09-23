@@ -50,7 +50,7 @@ Whisper-class models hallucinate on silence.
 | `VELOX_API_URL` | `https://velox.josevictor.me` | Velox base URL |
 | `VELOX_API_KEY` | — | **required** bearer token |
 | `TTS_MODEL` | `voice` | speech combo (velox `[combos.voice]`: speechify-tts, then elevenlabs-tts) |
-| `TTS_VOICE` | `geffen_32` | voice |
+| `TTS_VOICE` | `stone` | velox combo voice name, resolved per target (a raw provider id like `geffen_32` is not in the combo table and gets dropped) |
 | `TTS_SUMMARY_MODEL` | `deepseek-v4-flash` | chat model for the summary |
 | `TTS_LANGUAGE` | `pt-BR` | spoken language — the summary is written in it and it is sent to the speech endpoint |
 | `TTS_AUTO_SPEAK` | off | `1`/`true` speaks every reply automatically |
